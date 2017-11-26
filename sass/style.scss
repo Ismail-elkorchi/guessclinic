@@ -1,9 +1,9 @@
 /*!
 Theme Name: Guess Clinic
-Theme URI: http://underscores.me/
+Theme URI: https://guessclinic.com/
 Author: Ismail El Korchi
 Author URI: http://www.ismailelkorchi.com/
-Description: The guessclinic.com theme
+Description: The Guess Clinic theme.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -23,84 +23,108 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Normalize
-# Typography
+# Generic
+	## Normalize
+	## Box sizing
 # Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
+# Layouts
 	## Posts and pages
 	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
+	## Widgets
+# Plugins
+	## Infinite scroll
+# Components
+	## Navigation
+	## Media
+		## Captions
+		## Galleries
+# Utilities
+	## Accessibility
+	## Alignments
+	## Clearings
 --------------------------------------------------------------*/
-@import "variables-site/variables-site";
-@import "mixins/mixins-master";
+
+// Settings - Global variables, config switches.
+@import "settings/variables";
+
+// Tools - Default mixins and functions.
+@import "tools/mixins";
 
 /*--------------------------------------------------------------
-# Normalize
+# Generic - Ground-zero styles (resets, box-sizing, etc.).
 --------------------------------------------------------------*/
-@import "normalize";
+/*--------------------------------------------------------------
+## Normalize
+--------------------------------------------------------------*/
+@import "generic/normalize";
 
 /*--------------------------------------------------------------
-# Typography
+## Box sizing
 --------------------------------------------------------------*/
-@import "typography/typography";
+@import "generic/box-sizing";
 
 /*--------------------------------------------------------------
-# Elements
+# Elements - Unclassed HTML elements.
 --------------------------------------------------------------*/
+@import "elements/typography/typography";
 @import "elements/elements";
 
 /*--------------------------------------------------------------
-# Forms
+# Layouts - class-based undecorated design patterns.
 --------------------------------------------------------------*/
-@import "forms/forms";
+// @import "layouts/content-sidebar";
+// @import "layouts/sidebar-content";
 
 /*--------------------------------------------------------------
-# Navigation
+## Posts and pages
 --------------------------------------------------------------*/
-@import "navigation/navigation";
+@import "layouts/posts-and-pages";
 
 /*--------------------------------------------------------------
-# Accessibility
+## Comments
 --------------------------------------------------------------*/
-@import "modules/accessibility";
+@import "layouts/comments";
 
 /*--------------------------------------------------------------
-# Alignments
+## Widgets
 --------------------------------------------------------------*/
-@import "modules/alignments";
+@import "layouts/widgets";
 
 /*--------------------------------------------------------------
-# Clearings
+## Plugins - Third-party plugins styles.
 --------------------------------------------------------------*/
-@import "modules/clearings";
+/*--------------------------------------------------------------
+## Infinite scroll
+--------------------------------------------------------------*/
+@import "plugins/infinite-scroll";
 
 /*--------------------------------------------------------------
-# Widgets
+# Components - specific UI components.
 --------------------------------------------------------------*/
-@import "site/secondary/widgets";
+/*--------------------------------------------------------------
+## Navigation
+--------------------------------------------------------------*/
+@import "components/navigation";
 
 /*--------------------------------------------------------------
-# Content
+## Media
 --------------------------------------------------------------*/
-@import "site/site";
+@import "components/media/media";
 
 /*--------------------------------------------------------------
-# Infinite scroll
+# Utilities - Helpers and overrides.
 --------------------------------------------------------------*/
-@import "modules/infinite-scroll";
+/*--------------------------------------------------------------
+## Accessibility
+--------------------------------------------------------------*/
+@import "utilities/accessibility";
 
 /*--------------------------------------------------------------
-# Media
+## Alignments
 --------------------------------------------------------------*/
-@import "media/media";
+@import "utilities/alignments";
+
+/*--------------------------------------------------------------
+## Clearings
+--------------------------------------------------------------*/
+@import "utilities/clearings";
