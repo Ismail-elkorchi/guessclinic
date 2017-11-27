@@ -1,0 +1,50 @@
+{
+  "name": "guessclinic",
+  "version": "1.0.0",
+  "author": "Ismail El Korchi",
+  "homepage": "https://guessclinic.com",
+  "description": "The guessclinic.com theme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ismail-elkorchi/guessclinic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ismail-elkorchi/guessclinic/issues"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build:css": "npm run compile:css && npm run prefix:css && npm run format:css && npm run fix:css",
+    "compile:css": "node-sass sass/style.scss style.css --output-style expanded --indent-type tab --indent-width 1",
+    "prefix:css": "postcss style.css -u autoprefixer -o style.css --no-map",
+    "lint:scss": "stylelint 'sass/**/*.scss' --syntax scss --config node_modules/stylelint-config-wordpress/scss.js",
+    "lint:css": "stylelint style.css",
+    "fix:scss": "stylelint 'sass/**/*.scss' --syntax scss --fix --config node_modules/stylelint-config-wordpress/scss.js",
+    "fix:css": "stylelint style.css --fix",
+    "format:css": "stylefmt style.css"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "browserslist": "^2.9.1",
+    "node-sass": "^4.7.2",
+    "postcss-cli": "^4.1.1",
+    "stylefmt": "^6.0.0",
+    "stylelint": "^8.3.1",
+    "stylelint-config-wordpress": "^12.0.0"
+  },
+  "stylelint": {
+    "defaultSeverity": "warning",
+    "extends": "stylelint-config-wordpress"
+  },
+  "browserslist": [
+    "> 1%",
+    "ie >= 11",
+    "last 1 Android versions",
+    "last 1 ChromeAndroid versions",
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Safari versions",
+    "last 2 iOS versions",
+    "last 2 Edge versions",
+    "last 2 Opera versions"
+  ]
+}
