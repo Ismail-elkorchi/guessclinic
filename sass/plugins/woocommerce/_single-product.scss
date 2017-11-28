@@ -1,4 +1,5 @@
 .single-product {
+
 	div.product {
 		@include clearfix;
 		position: relative;
@@ -29,7 +30,7 @@
 					float: left;
 
 					img {
-						opacity: .5;
+						opacity: 0.5;
 
 						&.flex-active {
 							opacity: 1;
@@ -37,6 +38,7 @@
 					}
 
 					&:hover {
+
 						img {
 							opacity: 1;
 						}
@@ -45,8 +47,11 @@
 			}
 
 			@for $i from 2 through 5 {
+
 				&.woocommerce-product-gallery--columns-#{$i} {
+
 					.flex-control-thumbs {
+
 						li {
 							@include column-width($i);
 
@@ -66,6 +71,7 @@
 }
 
 .stock {
+
 	&:empty:before {
 		display: none;
 	}

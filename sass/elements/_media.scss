@@ -5,11 +5,13 @@ object {
 	max-width: 100%;
 }
 
+/* Make sure images are scaled correctly and adhere to the container width. */
 img {
-	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
+	height: auto;
+	max-width: 100%;
 }
 
+/* Extra wide images within figure tags don't overflow the content area. */
 figure {
-	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+	margin: 1em 0;
 }
