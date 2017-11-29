@@ -719,6 +719,11 @@ were hidden (via .neverending) before. */
 	width: 50%;
 }
 
+.site-main .pagination {
+	margin: 0 0 1.5em;
+	overflow: hidden;
+}
+
 /*--------------------------------------------------------------
 ## Media
 --------------------------------------------------------------*/

@@ -51,6 +51,27 @@ if ( ! function_exists( 'guessclinic_posted_by' ) ) :
 	}
 endif;
 
+if ( ! function_exists( 'guessclinic_paging_nav' ) ) :
+	/**
+	 * Displays a paginated navigation to next/previous set of posts, when applicable.
+	 *
+	 * This is shown at the end of archives to get to another page of entries.
+	 *
+	 * @param array $args Optional. See the_posts_pagination() for available arguments.
+	 * @link https://developer.wordpress.org/reference/functions/the_posts_pagination/#parameters
+	 */
+	function guessclinic_paging_nav( $args = array() ) {
+		$args = wp_parse_args( $args, array(
+			'end_size'           => 2,
+			'mid_size'           => 2,
+			'prev_text'          => __( '&larr; Previous page', 'guessclinic' ),
+			'next_text'          => __( 'Next page &rarr;', 'guessclinic' ),
+			'before_page_number' => '<span class="screen-reader-text">' . __( 'Page', 'guessclinic' ) . ' </span>',
+		) );
+		the_posts_pagination( $args );
+	}
+endif;
+
 if ( ! function_exists( 'guessclinic_entry_footer' ) ) :
 	/**
 	 * Prints HTML with meta information for the categories, tags and comments.
