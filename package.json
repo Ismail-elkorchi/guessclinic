@@ -23,8 +23,8 @@
     "format:css": "stylefmt style.css"
   },
   "devDependencies": {
-    "autoprefixer": "^7.1.6",
-    "browserslist": "^2.9.1",
+    "autoprefixer": "^7.2.1",
+    "browserslist": "^2.10.0",
     "node-sass": "^4.7.2",
     "postcss-cli": "^4.1.1",
     "stylefmt": "^6.0.0",
