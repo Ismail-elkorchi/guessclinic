@@ -15,6 +15,7 @@
   "scripts": {
     "build:css": "npm run compile:css && npm run prefix:css && npm run format:css && npm run fix:css",
     "compile:css": "node-sass sass/style.scss style.css --output-style expanded --indent-type tab --indent-width 1",
+    "watch:css": "node-sass sass/style.scss style.css --output-style expanded --indent-type tab --indent-width 1 -w",
     "prefix:css": "postcss style.css -u autoprefixer -o style.css --no-map",
     "lint:scss": "stylelint 'sass/**/*.scss' --syntax scss --config node_modules/stylelint-config-wordpress/scss.js",
     "lint:css": "stylelint style.css",
