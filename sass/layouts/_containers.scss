@@ -24,3 +24,15 @@
 	clear: both;
 	width: $size__site-main;
 }
+
+.full-width {
+
+	.content-area {
+		float: none;
+		margin: 0 auto;
+	}
+
+	.site-main {
+		margin: 0;
+	}
+}

@@ -582,6 +582,15 @@ table {
 	width: 100%;
 }
 
+.full-width .content-area {
+	float: none;
+	margin: 0 auto;
+}
+
+.full-width .site-main {
+	margin: 0;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/

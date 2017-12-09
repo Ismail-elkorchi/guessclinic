@@ -17,6 +17,11 @@ function guessclinic_body_classes( $classes ) {
 		$classes[] = 'hfeed';
 	}
 
+	// Adds a class of full-width to non-blog pages.
+	if ( ! is_home() && ! is_single() && ! is_archive() ) {
+		$classes[] = 'full-width';
+	}
+
 	return $classes;
 }
 add_filter( 'body_class', 'guessclinic_body_classes' );
