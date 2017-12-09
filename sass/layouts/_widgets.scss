@@ -1,5 +1,33 @@
 .widget {
 	margin: 0 0 1.5em;
+	word-wrap: break-word;
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			padding: 1em 0;
+
+			&.page_item_has_children,
+			&.menu-item-has-children {
+				padding-bottom: 0;
+				border: none;
+			}
+		}
+
+	}
+
+	input[type="submit"] {
+		border: 0;
+		clip: rect(0, 0, 0, 0);
+		height: 1px;
+		margin: -1px;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
 
 	/* Make sure select elements fit in widgets. */
 	select {
