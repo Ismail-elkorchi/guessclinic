@@ -28,6 +28,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Box sizing
 # Elements
 # Layouts
+	## Site Containers
 	## Posts and pages
 	## Comments
 	## Widgets
@@ -550,6 +551,16 @@ table {
 /*--------------------------------------------------------------
 # Layouts - class-based undecorated design patterns.
 --------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Site Containers
+--------------------------------------------------------------*/
+.site-content,
+.wrap {
+	margin: 0 auto;
+	max-width: 80rem;
+}
+
 .content-area {
 	float: left;
 	margin: 0 -25% 0 0;

@@ -28,6 +28,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Box sizing
 # Elements
 # Layouts
+	## Site Containers
 	## Posts and pages
 	## Comments
 	## Widgets
@@ -73,7 +74,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Layouts - class-based undecorated design patterns.
 --------------------------------------------------------------*/
-@import "layouts/content-sidebar";
+
+/*--------------------------------------------------------------
+## Site Containers
+--------------------------------------------------------------*/
+@import "layouts/containers";
+
 
 /*--------------------------------------------------------------
 ## Posts and pages
