@@ -29,6 +29,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Elements
 # Layouts
 	## Site Containers
+	## Header
 	## Posts and pages
 	## Comments
 	## Widgets
@@ -592,6 +593,41 @@ table {
 }
 
 /*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+.site-branding {
+	float: left;
+}
+
+.site-branding .site-title {
+	clear: none;
+	margin: 0;
+	font-size: 16px;
+	font-size: 1rem;
+	font-weight: normal;
+}
+
+.site-branding .site-title a {
+	display: block;
+	padding: 1em;
+	margin: 1em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.site-branding .site-logo {
+	float: left;
+}
+
+.site-branding .site-logo img {
+	width: auto;
+	height: 80px;
+	padding: 0.5em;
+	margin: 8px 0 0;
+}
+
+/*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
 .sticky {
@@ -696,10 +732,8 @@ were hidden (via .neverending) before. */
 ## Navigation
 --------------------------------------------------------------*/
 .main-navigation {
-	clear: both;
 	display: block;
-	float: left;
-	width: 100%;
+	float: right;
 }
 
 .main-navigation ul {
@@ -745,6 +779,8 @@ were hidden (via .neverending) before. */
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	padding: 1em;
+	margin: 1em;
 }
 
 /* Small menu. */

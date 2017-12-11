@@ -29,6 +29,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Elements
 # Layouts
 	## Site Containers
+	## Header
 	## Posts and pages
 	## Comments
 	## Widgets
@@ -80,6 +81,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 @import "layouts/containers";
 
+/*--------------------------------------------------------------
+## Header
+--------------------------------------------------------------*/
+@import "layouts/header";
 
 /*--------------------------------------------------------------
 ## Posts and pages

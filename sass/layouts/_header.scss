@@ -1,0 +1,30 @@
+.site-branding {
+	float: left;
+
+	.site-title {
+		clear: none;
+		margin: 0;
+		@include font-size(1);
+		font-weight: normal;
+
+		a {
+			display: block;
+			padding: 1em;
+			margin: 1em;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+	}
+
+	.site-logo {
+		float: left;
+
+		img {
+			width: auto;
+			height: 80px;
+			padding: 0.5em;
+			margin: 8px 0 0 0;
+		}
+	}
+}
