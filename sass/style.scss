@@ -33,6 +33,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Posts and pages
 	## Comments
 	## Widgets
+# Pages
+	## Home page
 # Plugins
 	## Infinite scroll
 # Components
@@ -100,6 +102,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 ## Widgets
 --------------------------------------------------------------*/
 @import "layouts/widgets";
+
+/*--------------------------------------------------------------
+# Pages
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+## Home page
+--------------------------------------------------------------*/
+@import "pages/home";
 
 /*--------------------------------------------------------------
 # Plugins - Third-party plugins styles.
