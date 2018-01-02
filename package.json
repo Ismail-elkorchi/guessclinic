@@ -15,7 +15,9 @@
   "scripts": {
     "build:css": "npm run compile:css && npm run prefix:css && npm run format:css && npm run fix:css",
     "compile:css": "node-sass sass/style.scss style.css --output-style expanded --indent-type tab --indent-width 1",
-    "watch:css": "node-sass sass/style.scss style.css --output-style expanded --indent-type tab --indent-width 1 -w",
+    "watch:css": "node-sass sass/ -o ./ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
+    "browser-sync": "browser-sync start --proxy 'guessclinic.test' --files '**/*'",
+    "live-serve": "npm run watch:css & npm run browser-sync",
     "prefix:css": "postcss style.css -u autoprefixer -o style.css --no-map",
     "lint:scss": "stylelint 'sass/**/*.scss' --syntax scss --config node_modules/stylelint-config-wordpress/scss.js",
     "lint:css": "stylelint style.css",
@@ -25,6 +27,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^7.2.1",
+    "browser-sync": "^2.23.1",
     "browserslist": "^2.10.0",
     "node-sass": "^4.7.2",
     "postcss-cli": "^4.1.1",
