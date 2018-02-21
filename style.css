@@ -35,8 +35,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Widgets
 # Pages
 	## Home page
-# Plugins
-	## Infinite scroll
 # Components
 	## Navigation
 	## Media
@@ -499,19 +497,16 @@ input[type="submit"]:focus {
 }
 
 .button:hover {
-	-webkit-transform: translateY(-3px);
 	transform: translateY(-3px);
 	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .button:hover::after {
-	-webkit-transform: scaleX(1.4) scaleY(1.6);
 	transform: scaleX(1.4) scaleY(1.6);
 	opacity: 0;
 }
 
 .button:active {
-	-webkit-transform: translateY(-1px);
 	transform: translateY(-1px);
 	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
@@ -818,7 +813,6 @@ table {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	text-align: center;
 }
@@ -841,26 +835,6 @@ table {
 }
 
 .hero .text-box span {
-	display: block;
-}
-
-/*--------------------------------------------------------------
-# Plugins - Third-party plugins styles.
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-## Infinite scroll
---------------------------------------------------------------*/
-
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation,
-.infinite-scroll.neverending .site-footer {
-	display: none;
-}
-
-/* When Infinite Scroll has reached its end we need to re-display elements that
-were hidden (via .neverending) before. */
-.infinity-end.neverending .site-footer {
 	display: block;
 }
 
